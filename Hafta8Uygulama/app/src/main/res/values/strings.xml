@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hafta8-Uygulama</string>
+
+    <string-array name="şehirler">
+
+        <item> Şehir Seçiniz</item>
+        <item> İstanbul</item>
+        <item> Ankara</item>
+        <item> Rize</item>
+        <item> Trabzon</item>
+        <item> İzmir</item>
+        <item> Balıkesir</item>
+        <item> Niğde</item>
+        <item> Konya</item>
+        <item> Eskişehir</item>
+
+
+    </string-array>
+</resources>

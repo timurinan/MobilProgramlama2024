@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_doğumtarihi"
+        android:hint="Doğum Tarihi Giriniz"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ekle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Spinner
+        android:id="@+id/spn_doğumyeri"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mail" />
+
+    <EditText
+        android:id="@+id/txt_Mail"
+        android:hint="Mail Giriniz"
+        android:layout_width="254dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/spn_doğumyeri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="8dp"
+        android:text="Müşteri Mail"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Mail"
+        app:layout_constraintStart_toStartOf="@+id/txt_Mail"
+        app:layout_constraintTop_toBottomOf="@+id/txt_adsoyad" />
+
+    <EditText
+        android:id="@+id/txt_adsoyad"
+        android:hint="Ad Soyad Giriniz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="3dp"
+        android:text="Müşteri Ad-Soyad"
+        app:layout_constraintBottom_toTopOf="@+id/txt_adsoyad"
+        app:layout_constraintStart_toStartOf="@+id/txt_adsoyad"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_ekle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="141dp"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_doğumtarihi"
+        app:layout_constraintStart_toStartOf="@+id/txt_doğumtarihi"
+        app:layout_constraintTop_toBottomOf="@+id/txt_doğumtarihi" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Doğum Tarihi"
+        app:layout_constraintBottom_toTopOf="@+id/txt_doğumtarihi"
+        app:layout_constraintStart_toStartOf="@+id/txt_doğumtarihi"
+        app:layout_constraintTop_toBottomOf="@+id/spn_doğumyeri" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
