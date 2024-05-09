@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1087704765588",
+    "project_id": "hafta13uygulama",
+    "storage_bucket": "hafta13uygulama.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087704765588:android:84e6f8465a41a9a5aa9081",
+        "android_client_info": {
+          "package_name": "com.example.hafta13uygulama"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOTQNVf8NSvtGbpm3GySSnEhgUbs4rYxY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
