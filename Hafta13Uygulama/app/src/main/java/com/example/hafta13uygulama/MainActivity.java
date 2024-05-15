@@ -59,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(fa.getCurrentUser().isEmailVerified()&&task.isSuccessful()){
-                            Toast.makeText(MainActivity.this, "Giriş başarılı...", Toast.LENGTH_LONG).show();
+                            Intent intent=new Intent(MainActivity.this,ListActivity.class);
+                            startActivity(intent);
                         }else{
                             Toast.makeText(MainActivity.this, "Giriş başarısız", Toast.LENGTH_LONG).show();
                         }
